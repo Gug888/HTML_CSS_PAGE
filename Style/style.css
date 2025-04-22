@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    min-height: 135px ;
+    background-color: #d6d6c2;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+nav .d1{
+    width: 100%;
+    min-height: 45px;
+    background-color:   #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.d1 ::placeholder{
+    color: darkslategray ;
+    font-size: clamp(10px,4vw,15px);
+}
+.d1 p{
+    font-size: clamp(10px,4vw,15px);
+}
+nav input{
+    border:none;
+    min-height: 40px;
+    width: clamp(100px,50vw,200px);
+    background-color:  #d9d9d9;   
+}
+
+nav input:hover{
+ border-bottom: 1px solid black;
+}
+nav .d2{
+    width: 100%;
+    min-height: 90px;
+    background-color: rgb(63, 59, 59);
+    color:  #d9d9d9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.d2 h2{
+    letter-spacing: 0.3em;
+    font-size: clamp(15px,5vw,20px);
+}
+
+.d2 li{
+        transition: 0.7s;
+}
+
+.d2 li:hover{
+    color:#8cb3d9;
+    transition: 0.7s;
+}
+
+.d2 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 50px;
+    font-size: clamp(10px,4vw,16px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sec1{
+    width: 100%;
+    min-height:  800px; 
+    background-image: url("..//image/sevzgestov.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 .c1{
+    width: clamp(300px,55vw,600px);
+    min-height: 200px;
+    background-color: rgba(214, 214, 204,0.4);
+    letter-spacing: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    
+}
+.c1 h1{
+    font-size: clamp(12px,15vw,55px);
+    color: rgb(63, 59, 59);
+}
+.c1 button{
+    width: clamp(40px,8vw,200px);
+    min-height: 40px;
+    background-color: rgb(63, 59, 59);
+    color: white;
+    border: none;
+    font-size: clamp(12px,2vw,17px);
+    transition: 0.5s;
+}
+
+
+.c1 button:hover{
+    background-color: white;
+    color: rgb(63, 59, 59);
+    transition: 0.5s;
+}
+.sec2{
+    width: 100%;
+    min-height: 50px;
+    background-color:  #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(8px, 3vw,13px);
+    text-align: center;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sec3{
+    width: 100%;
+    min-height: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+
+}
+.sec3 .content{
+    width: clamp(550px, 100vw, 960px);
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    
+}
+.sec3 h3{
+    font-size: clamp(15px,7vw,30px);
+    color: rgb(63, 59, 59);
+    letter-spacing: 8px;
+    line-height: 35px;
+}
+.sec3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px,4vw,18px);
+    color: rgb(63, 59, 59);
+    letter-spacing: 5px; 
+    line-height: 25px;
+}
+.sec3 .good{
+    width: clamp(150px,45vw,300px);
+    min-height: 460px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.sec3 .imgyd{
+    width: clamp(150px,45vw,300px);
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec3 .imgyd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   
+}
+.sec3 .good img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;  
+    transition: 1s; 
+
+}
+
+.sec3 .good img:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    
+    
+}
+
+.sec3 .good button{
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(63, 61, 59);
+    border: none;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.good button p{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    transition: 0.4s;
+    font-size: clamp(12px,3vw,14px);
+}
+ .good .p2{
+    opacity: 0;
+}
+.good button:hover .p1{
+    opacity: 0;
+    transition: 0.4s;
+}
+.good button:hover .p2{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.footer{
+    width: 100%;
+    min-height: 300px;
+    background-color:rgb(63, 61, 59);
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    column-gap: 120px;
+    color: #d9d9d9;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px,3vw,12px);
+    letter-spacing: 3px;
+    flex-wrap: wrap;
+}
+.f1{
+   display: flex;
+   flex-direction: column;
+   padding-top: 30px;
+   row-gap: 20px;
+}
+.f1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 10px;
+}
+.footer span{
+    line-height: 2;
+
+}
+.f2 input{
+    background-color: rgb(83, 81, 79);
+    width: clamp(100px,60vw,300px);
+    height: 30px;
+    transition: 0.4s;
+    
+}
+
+.f2 ::placeholder{
+    color: white;
+    text-indent: 15px;
+    font-size: 14px;
+    border: none;
+}
+.f2 input{
+    border: none;
+}
+.f2 button{
+    background-color:#d6d6c2;
+    width:clamp(100px,60vw,300px) ;
+    height: 30px;
+    border: none;
+    transition: 0.6s;
+    font-size: 17px;
+}
+.f3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 30px;
+}
+.f3 p{
+    line-height: 0.5px;
+}
+.f2 input:hover{
+    background-color: rgb(63, 61, 59);
+    transition: 0.4s;
+    
+}
+
+.fix{
+    background-color: rgb(83, 81, 79);
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px; 
+}
+.f2 .subs:hover{
+    background-color:  white;
+    transition: 0.6s;
+}
